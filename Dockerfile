@@ -12,7 +12,7 @@ ARG PUPPETEER_CHROMIUM_REVISION_ARG=1011831
 ARG PUPPETEER_SKIP_DOWNLOAD_ARG
 
 # Set the environment variable to increase Node.js memory limit
-ENV NODE_OPTIONS="--max-old-space-size=4096"
+ENV NODE_OPTIONS="--max-old-space-size=8192"
 
 RUN apk add --no-cache git
 
